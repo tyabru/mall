@@ -1,5 +1,6 @@
 package com.xjtu.mall.controller;
 
+import cn.hutool.core.lang.Console;
 import com.xjtu.mall.common.api.CommonResult;
 import com.xjtu.mall.modules.ums.service.UmsMemberService;
 import com.xjtu.mall.common.util.JwtTokenUtil;
