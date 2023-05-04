@@ -28,7 +28,7 @@ public interface PmsProductCategoryService extends IService<PmsProductCategory> 
     Page list(Long parentId, Integer pageNum, Integer pageSize);
 
     boolean updateNavStatus(List<Long> ids, Integer navStatus);
-
+    boolean updateShowStatus(List<Long> ids, Integer showStatus);
     boolean CustomSave(PmsProductCategoryDTO productCategoryDTO);
 
     boolean update(PmsProductCategoryDTO productCategoryDTO);

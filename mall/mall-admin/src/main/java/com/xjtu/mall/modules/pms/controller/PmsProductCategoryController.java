@@ -68,7 +68,19 @@ public class PmsProductCategoryController {
         }
 
     }
+    @RequestMapping(value="/update/showStatus",method = RequestMethod.POST)
+    public CommonResult updateShowStatus(@RequestParam(value="ids") List<Long> ids,
+                                         @RequestParam(value="showStatus") Integer showStatus){
 
+        boolean result = productCategoryService.updateShowStatus(ids,showStatus);
+        if(result){
+            return CommonResult.success(result);
+        }
+        else {
+            return CommonResult.failed();
+        }
+
+    }
     /**
      * 商品分类删除
      *  url:'/productCategory/delete/'+id,
