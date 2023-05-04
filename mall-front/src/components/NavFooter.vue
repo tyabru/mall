@@ -1,12 +1,16 @@
 <template>
   <div class="footer">
-    <div class="footer-logo">
-      <!-- <img src="/imgs/logo-footer.png" alt=""> -->
-      <p></p>
+    <!-- <div class="footer-logo">
+      <img src="/imgs/logo-footer.png" alt="">
+      <p>图灵商城</p>
     </div>             
     <div class="footer-link">
+      <a href="http://www.tulingxueyuan.cn/" target="_blank">图灵学院</a><span>|</span>
+      <a href="https://ke.qq.com/course/231516?tuin=a6505b53" target="_blank">腾讯课堂java架构师培训</a><span>|</span>
+      <a href="https://ke.qq.com/course/429988" target="_blank">数据结构与算法</a><span>|</span>
+      <a href="https://tuling.ke.qq.com/" target="_blank">腾讯课堂图灵学院</a>
     </div>
-    <div class="copyright">Copyright ©2019 <span class="domain"></span> All Rights Reserved.</div>
+    <div class="copyright">Copyright ©2019 <span class="domain">图灵学院</span> All Rights Reserved.</div> -->
   </div>
 </template>
 <script>
