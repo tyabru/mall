@@ -9,7 +9,7 @@
         <div style="text-align: center">
           <svg-icon icon-class="login-mall" style="width: 56px;height: 56px;color: #409EFF"></svg-icon>
         </div>
-        <h2 class="login-title color-main">mall-admin-web</h2>
+        <h2 class="login-title color-main">线上杂货铺后台管理系统</h2>
         <el-form-item prop="username">
           <el-input name="username"
                     type="text"
@@ -39,11 +39,11 @@
         <el-form-item style="margin-bottom: 60px;text-align: center">
           <el-button style="width:100%" type="primary" :loading="loading" @click.native.prevent="handleLogin">
             登录
-          </el-button> 
+          </el-button>
         </el-form-item>
       </el-form>
     </el-card>
-    <img :src="login_center_bg" class="login-center-layout"> 
+    <img :src="login_center_bg" class="login-center-layout">
   </div>
 </template>
 
