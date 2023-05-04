@@ -1,13 +1,13 @@
 <template>
-  <div class="login">
+  <div class="register">
     <div class="container">
-      <a href="/#/index"><img src="/imgs/login-logo.png" alt=""></a>
+     
     </div>
     <div class="wrapper">
       <div class="container">
-        <div class="login-form">
+        <div class="register-form">
           <h3>
-            <span class="checked">帐号登录</span>
+            <span class="checked">帐号注册</span>
               <!-- <span class="sep-line">|</span><span>扫码登录</span> -->
           </h3>
           <div class="input">
@@ -17,23 +17,14 @@
             <input type="password" placeholder="请输入密码" v-model="password">
           </div>
           <div class="btn-box">
-            <a href="javascript:;" class="btn" @click="login">登录</a>
+            <a href="javascript:;" class="btn" @click="register">注册</a>
           </div>
           <div class="tips">
             <!-- <div class="sms" @click="register">手机短信登录/注册</div> -->
-            <div class="reg" @click="register">立即注册<span>|</span>忘记密码？</div>
+            <div class="reg" @click="login">登录</div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer">
-      <div class="footer-link">
-        <a href="http://www.tulingxueyuan.cn/" target="_blank">图灵学院</a><span>|</span>
-        <a href="https://ke.qq.com/course/231516?tuin=a6505b53" target="_blank">腾讯课堂java架构师培训</a><span>|</span>
-        <a href="https://ke.qq.com/course/429988" target="_blank">数据结构与算法</a><span>|</span>
-        <a href="https://tuling.ke.qq.com/" target="_blank">腾讯课堂图灵学院</a>
-      </div>
-      <p class="copyright">Copyright ©2019 图灵学院 All Rights Reserved.</p>
     </div>
   </div>
 </template>
@@ -45,7 +36,7 @@ import Qs from 'qs'
 
 export default {
   Qs,
-  name: 'login',
+  name: 'register',
   data(){
     return {
       username:'',
@@ -55,50 +46,22 @@ export default {
   },
   methods:{
     login(){
-      let { username,password } = this;
-      
-      this.axios.post('user/login',
-         Qs.stringify({
-         username:username,
-         password:password
-         }),{headers: {'Content-Type': 'application/x-www-form-urlencoded'}}).then((res)=>{
-          window.console.log(res)
-           // 将 tokenHead+jwtToken 存入到cookie  下次请求就可以携带在请求头中了
-          this.$cookie.set('logintoken',res.tokenHead+' '+res.token);
-          window.console.log(res.tokenHead+' '+res.token)
-          // 保存到全局变量中
-          this.$store.dispatch('saveToken',res.token);
-          // 拿到payloader 解码
-          var tokenStr= decodeURIComponent(escape(window.atob(res.token.split('.')[1])));
-          // 转换为json对象
-          let username = JSON.parse(tokenStr).user_name;
-
-          // let username=res.username
-          
-          // setCookie("token",username,120);
-
-          // setCookie=this.$cookie.set
-           setCookie("username",username,120);
-           // this.saveUserName= this.$store.dispatch('saveUserName',username)
-           this.saveUserName(username);
-            
-           this.$router.push({
-              name:'index',
-              params:{
-                from:'login'
-              }
-            });
-      })
+      this.$router.push('/login');
     },
     ...mapActions(['saveUserName']),
-     register(){
-        this.$router.push('/register');
-      }
+    register(){
+      this.axios.post('/user/register',{
+        username:this.username,
+        password:this.password
+      }).then(()=>{
+        this.$message.success('注册成功');
+      })
+    }
   }
 }
 </script>
 <style lang="scss">
-.login{
+.register{
   &>.container{
     height:113px;
     img{
@@ -110,7 +73,7 @@ export default {
     background:url('/imgs/login-bg.jpg') no-repeat center;
     .container{
       height:576px;
-      .login-form{
+      .register-form{
         box-sizing: border-box;
         padding-left: 31px;
         padding-right: 31px;

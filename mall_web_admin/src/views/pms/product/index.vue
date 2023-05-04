@@ -130,18 +130,18 @@
             </p>
           </template>
         </el-table-column>
-        <el-table-column label="排序" width="100" align="center">
+        <!-- <el-table-column label="排序" width="100" align="center">
           <template slot-scope="scope">{{scope.row.sort}}</template>
-        </el-table-column>
-        <el-table-column label="SKU库存" width="100" align="center">
+        </el-table-column> -->
+        <!-- <el-table-column label="SKU库存" width="100" align="center">
           <template slot-scope="scope">
             <el-button type="primary" icon="el-icon-edit" @click="handleShowSkuEditDialog(scope.$index, scope.row)" circle></el-button>
           </template>
-        </el-table-column>
+        </el-table-column> -->
         <el-table-column label="销量" width="100" align="center">
           <template slot-scope="scope">{{scope.row.sale}}</template>
         </el-table-column>
-        <el-table-column label="审核状态" width="100" align="center">
+        <!-- <el-table-column label="审核状态" width="100" align="center">
           <template slot-scope="scope">
             <p>{{scope.row.verifyStatus | verifyStatusFilter}}</p>
             <p>
@@ -151,24 +151,24 @@
               </el-button>
             </p>
           </template>
-        </el-table-column>
+        </el-table-column> -->
         <el-table-column label="操作" width="160" align="center">
           <template slot-scope="scope">
             <p>
-              <el-button
+              <!-- <el-button
                 size="mini"
                 @click="handleShowProduct(scope.$index, scope.row)">查看
-              </el-button>
+              </el-button> -->
               <el-button
                 size="mini"
                 @click="handleUpdateProduct(scope.$index, scope.row)">编辑
               </el-button>
             </p>
             <p>
-              <el-button
+              <!-- <el-button
                 size="mini"
                 @click="handleShowLog(scope.$index, scope.row)">日志
-              </el-button>
+              </el-button> -->
               <el-button
                 size="mini"
                 type="danger"

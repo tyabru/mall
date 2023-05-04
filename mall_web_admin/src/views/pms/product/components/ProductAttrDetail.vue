@@ -106,7 +106,7 @@
           @click="handleSyncProductSkuStock">同步库存
         </el-button>
       </el-form-item>
-      <el-form-item label="属性图片：" v-if="hasAttrPic">
+      <!-- <el-form-item label="属性图片：" v-if="hasAttrPic">
         <el-card shadow="never" class="cardBg">
           <div v-for="(item,index) in selectProductAttrPics">
             <span>{{item.name}}:</span>
@@ -114,7 +114,7 @@
                            style="width: 300px;display: inline-block;margin-left: 10px"></single-upload>
           </div>
         </el-card>
-      </el-form-item>
+      </el-form-item> -->
       <el-form-item label="商品参数：">
         <el-card shadow="never" class="cardBg">
           <div v-for="(item,index) in selectProductParam" :class="{littleMarginTop:index!==0}">
@@ -134,7 +134,7 @@
       <el-form-item label="商品相册：">
         <multi-upload v-model="selectProductPics"></multi-upload>
       </el-form-item>
-      <el-form-item label="规格参数：">
+      <!-- <el-form-item label="规格参数：">
         <el-tabs v-model="activeHtmlName" type="card">
           <el-tab-pane label="电脑端详情" name="pc">
             <tinymce :width="595" :height="300" v-model="value.detailHtml"></tinymce>
@@ -143,7 +143,7 @@
             <tinymce :width="595" :height="300" v-model="value.detailMobileHtml"></tinymce>
           </el-tab-pane>
         </el-tabs>
-      </el-form-item>
+      </el-form-item> -->
       <el-form-item style="text-align: center">
         <el-button size="medium" @click="handlePrev">上一步，填写商品促销</el-button>
         <el-button type="primary" size="medium" @click="handleFinishCommit">完成，提交商品</el-button>
