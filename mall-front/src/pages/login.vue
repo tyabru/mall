@@ -21,20 +21,13 @@
           </div>
           <div class="tips">
             <!-- <div class="sms" @click="register">手机短信登录/注册</div> -->
-            <div class="reg" @click="register">立即注册<span>|</span>忘记密码？</div>
+            <!-- <div class="reg" @click="register">立即注册<span>|</span>忘记密码？</div> -->
+            <div class="reg" @click="register">立即注册</div>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="footer-link">
-        <a href="http://www.tulingxueyuan.cn/" target="_blank">图灵学院</a><span>|</span>
-        <a href="https://ke.qq.com/course/231516?tuin=a6505b53" target="_blank">腾讯课堂java架构师培训</a><span>|</span>
-        <a href="https://ke.qq.com/course/429988" target="_blank">数据结构与算法</a><span>|</span>
-        <a href="https://tuling.ke.qq.com/" target="_blank">腾讯课堂图灵学院</a>
-      </div>
-      <p class="copyright">Copyright ©2019 图灵学院 All Rights Reserved.</p>
-    </div>
+    
   </div>
 </template>
 <script>
