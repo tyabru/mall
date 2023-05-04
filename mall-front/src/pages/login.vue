@@ -21,13 +21,11 @@
           </div>
           <div class="tips">
             <!-- <div class="sms" @click="register">手机短信登录/注册</div> -->
-            <!-- <div class="reg" @click="register">立即注册<span>|</span>忘记密码？</div> -->
             <div class="reg" @click="register">立即注册</div>
           </div>
         </div>
       </div>
     </div>
-    
   </div>
 </template>
 <script>
@@ -40,6 +38,7 @@ export default {
   Qs,
   name: 'login',
   data(){
+    //初始的账号登陆界面中的默认值
     return {
       username:'',
       password:'',
@@ -84,9 +83,14 @@ export default {
       })
     },
     ...mapActions(['saveUserName']),
-     register(){
-        this.$router.push('/register');
-      }
+    register(){
+      this.axios.post('/user/register',{
+        username:this.username,
+        password:this.password
+      }).then(()=>{
+        this.$message.success('注册成功');
+      })
+    }
   }
 }
 </script>
