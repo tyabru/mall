@@ -47,7 +47,7 @@
         <el-table-column label="品牌首字母" width="100" align="center">
           <template slot-scope="scope">{{scope.row.firstLetter}}</template>
         </el-table-column>
-        <el-table-column label="排序" width="100" align="center">
+        <!-- <el-table-column label="排序" width="100" align="center">
           <template slot-scope="scope">{{scope.row.sort}}</template>
         </el-table-column>
         <el-table-column label="品牌制造商" width="100" align="center">
@@ -98,7 +98,7 @@
               @click="handleDelete(scope.$index, scope.row)">删除
             </el-button>
           </template>
-        </el-table-column>
+        </el-table-column> -->
       </el-table>
     </div>
     <div class="batch-operate-container">
