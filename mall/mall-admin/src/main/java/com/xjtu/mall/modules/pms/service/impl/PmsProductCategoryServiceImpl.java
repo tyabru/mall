@@ -77,7 +77,18 @@ public class PmsProductCategoryServiceImpl extends ServiceImpl<PmsProductCategor
 
         return this.update(pmsProductCategoryUpdateWrapper);
     }
+    @Override
+    public boolean updateShowStatus(List<Long> ids, Integer showStatus) {
+        UpdateWrapper<PmsProductCategory> pmsProductCategoryUpdateWrapper = new UpdateWrapper<>();
 
+        pmsProductCategoryUpdateWrapper.lambda()
+                // 需要更新的列
+                .set(PmsProductCategory::getShowStatus,showStatus)
+                // 条件
+                .in(PmsProductCategory::getId,ids);
+
+        return this.update(pmsProductCategoryUpdateWrapper);
+    }
     @Override
     @Transactional(rollbackFor = {Exception.class})
     public boolean CustomSave(PmsProductCategoryDTO productCategoryDTO) {
