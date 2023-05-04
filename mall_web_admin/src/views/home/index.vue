@@ -1,6 +1,6 @@
 <template>
   <div class="app-container">
-    欢迎来到后台管理系统！首页待订单模块完成后更新
+    欢迎来到后台管理系统！首页待订单模块完成后更新!
     <!-- <div class="address-layout">
       <el-row :gutter="20">
         <el-col :span="6">
