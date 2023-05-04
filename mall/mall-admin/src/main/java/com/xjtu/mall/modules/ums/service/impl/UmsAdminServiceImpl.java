@@ -73,6 +73,7 @@ public class UmsAdminServiceImpl extends ServiceImpl<UmsAdminMapper, UmsAdmin> i
         return null;
     }
 
+
     @Override
     public UmsAdmin register(UmsAdminParam umsAdminParam) {
         UmsAdmin umsAdmin = new UmsAdmin();
@@ -112,6 +113,7 @@ public class UmsAdminServiceImpl extends ServiceImpl<UmsAdminMapper, UmsAdmin> i
                 Asserts.fail("帐号已被禁用");
             }
             insertLoginLog(username);
+            updateLoginTimeByUsername(username);
         } catch (Exception e) {
             Asserts.fail("登录异常:"+e.getMessage());
         }
