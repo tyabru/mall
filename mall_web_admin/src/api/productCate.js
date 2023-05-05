@@ -52,6 +52,12 @@ export function updateNavStatus(data) {
     data:data
   })
 }
+export function fetchListWithChildren() {
+  return request({
+    url:'/productCategory/list/withChildren',
+    method:'get'
+  })
+}
 
 
  

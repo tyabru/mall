@@ -84,12 +84,7 @@ export default {
     },
     ...mapActions(['saveUserName']),
     register(){
-      this.axios.post('/user/register',{
-        username:this.username,
-        password:this.password
-      }).then(()=>{
-        this.$message.success('注册成功');
-      })
+       this.$router.push('/register');
     }
   }
 }

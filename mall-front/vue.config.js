@@ -7,7 +7,7 @@ module.exports = {
       '/api':{
         // target:'http://localhost:8081',
         // target:'http://yangguo.natapp1.cc',
-       target:'http://localhost:8082',
+       target:'http://localhost:8888',
         changeOrigin:true,
         pathRewrite:{
           '/api':''

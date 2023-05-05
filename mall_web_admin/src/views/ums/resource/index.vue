@@ -1,7 +1,7 @@
 <template> 
   <div class="app-container">
     <el-card class="filter-container" shadow="never">
-      <div>
+      <!-- <div>
         <i class="el-icon-search"></i>
         <span>筛选搜索</span>
         <el-button
@@ -17,7 +17,7 @@
           size="small">
           重置
         </el-button>
-      </div>
+      </div> -->
       <div style="margin-top: 15px">
         <el-form :inline="true" :model="listQuery" size="small" label-width="140px">
           <el-form-item label="资源名称：">

@@ -1,6 +1,6 @@
 <template>
   <div class="app-container">
-    欢迎来到后台管理系统！首页待订单模块完成后更新
+    <!-- 欢迎来到后台管理系统！首页待订单模块完成后更新 -->
     <!-- <div class="address-layout">
       <el-row :gutter="20">
         <el-col :span="6">
@@ -29,7 +29,7 @@
         </el-col>
       </el-row>
     </div> -->
-    <div class="total-layout">
+    <!-- <div class="total-layout">
       <el-row :gutter="20">
         <el-col :span="6">
           <div class="total-frame">
@@ -61,7 +61,7 @@
           </div>
         </el-col>
       </el-row>
-    </div>
+    </div> -->
     <!-- <el-card class="mine-layout">
       <div style="text-align: center">
         <img width="150px" height="150px" src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg">
