@@ -25,41 +25,41 @@ export default {
   },
   methods:{
     init(){
-      // 获取分类推进、分类推进对应的推进商品
-        this.axios.get("/home/goods_sale").then((res) => { 
-            for (let index = 0; index < res.length; index++) {
-              const cate = res[index];
-              this.postItems.push({
-                src:cate.pic,
-                url:cate.url
-              });
+      // // 获取分类推进、分类推进对应的推进商品
+      //   this.axios.get("/home/goods_sale").then((res) => { 
+      //       for (let index = 0; index < res.length; index++) {
+      //         const cate = res[index];
+      //         this.postItems.push({
+      //           src:cate.pic,
+      //           url:cate.url
+      //         });
 
-              let goods=[];
-              let productList=cate.productList;
-              for (let j = 0; j < productList.length; j++) {
-                const product = productList[j];
-                goods.push({
-                  value:product.name,
-                  desc:product.subTitle,
-                  sub:product.sub==0?true:false,
-                  newPrice:product.price,
-                  oldPrice:product.price<product.originalPrice?product.originalPrice:null,
-                  src:product.pic,
-                  url:"/#/detail/"+product.id
-                })
-              }
+      //         let goods=[];
+      //         let productList=cate.productList;
+      //         for (let j = 0; j < productList.length; j++) {
+      //           const product = productList[j];
+      //           goods.push({
+      //             value:product.name,
+      //             desc:product.subTitle,
+      //             sub:product.sub==0?true:false,
+      //             newPrice:product.price,
+      //             oldPrice:product.price<product.originalPrice?product.originalPrice:null,
+      //             src:product.pic,
+      //             url:"/#/detail/"+product.id
+      //           })
+      //         }
 
 
-              this.goodsItems.push({
-                boxTitle:cate.categoryName ,
-                url: '/#/searchResult/'+cate.categoryName,
-                listData:{
-                  goods:goods
-                }
-              })
+      //         this.goodsItems.push({
+      //           boxTitle:cate.categoryName ,
+      //           url: '/#/searchResult/'+cate.categoryName,
+      //           listData:{
+      //             goods:goods
+      //           }
+      //         })
 
-            }
-        });
+      //       }
+      //   });
     }
   },
   components: {
