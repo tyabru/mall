@@ -14,13 +14,15 @@
             <!-- Optional controls -->
             <div class="swiper-pagination" slot="pagination"></div>
           </swiper>
-        </div>
+        </div> 
+     
+
         <div class="content">
           <h2 class="item-title">{{ product.name }}</h2>
           <!-- <p class="item-info">相机全新升级 / 960帧超慢动作 / 手持超级夜景 / 全球首款双频GPS / 骁龙845处理器 / 红<br/>外人脸解锁 / AI变焦双摄 / 三星 AMOLED 屏</p> -->
           <p class="item-info">{{ product.subTitle }}</p>
           <!-- <div class="delivery">小米自营</div> -->
-          <div class="item-price">{{ product.price }}元</div>
+          <div class="item-price">{{ product.price }}元起</div>
           <div class="line"></div>
           <!-- <div class="item-addr">
             <i class="icon-loc"></i>
@@ -82,14 +84,14 @@
             </div>
             <div class="phone-total" v-if="skuPrice>0">总计：{{ skuPrice }}元</div> 
           </div>
-          <div class="btn-group">
+          <!-- <div class="btn-group">
             <a href="javascript:;" class="btn btn-large fl" @click="addCart"
               >加入购物车</a
             >
             <a href="javascript:;" class="btn btn-large btn-buy fl">立即购买</a>
-          </div>
+          </div> -->
 
-          <div class="after-sale-info">
+          <!-- <div class="after-sale-info">
             <span
               ><a
                 href="javascript:void(0);"
@@ -120,11 +122,11 @@
                 <em>免费包邮</em>
               </a>
             </span>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
-    <div class="price-info">
+    <!-- <div class="price-info">
       <div class="container">
         <h2>商品介绍</h2>
 
@@ -139,10 +141,10 @@
           </ul>
         </div>
         <div class="desc" v-html="product.detailHtml">
-          <!-- <img src="/imgs/detail/item-price.jpeg" alt=""> -->
+          <img src="/imgs/detail/item-price.jpeg" alt="">
         </div>
       </div>
-    </div>
+    </div> -->
     <service-bar></service-bar>
   </div>
 </template>
@@ -201,24 +203,24 @@ export default {
         this.serviceIds = res.serviceIds.split(",");
       });
     },
-    addCart() {
-      if (this.skuId == null || this.skuId == undefined || this.skuId == "") {
-        this.$message.warning("请选择一种规格");
-        return;
-      }
+    // addCart() {
+    //   if (this.skuId == null || this.skuId == undefined || this.skuId == "") {
+    //     this.$message.warning("请选择一种规格");
+    //     return;
+    //   }
       
-      this.axios
-        .post("/car/add", {
-          productId: this.id,
-          productSkuId: this.skuId,
-          quantity: 1,
-        })
-        .then(() => {
-          this.$message.success({ 
-          dangerouslyUseHTMLString: true,
-          message:"添加购物车成功，请点击<a href='/*/cart'>购物车</a>查看"});
-        });
-    },
+    //   this.axios
+    //     .post("/car/add", {
+    //       productId: this.id,
+    //       productSkuId: this.skuId,
+    //       quantity: 1,
+    //     })
+    //     .then(() => {
+    //       this.$message.success({ 
+    //       dangerouslyUseHTMLString: true,
+    //       message:"添加购物车成功，请点击<a href='/*/cart'>购物车</a>查看"});
+    //     });
+    // },
     handlerSkuid(item, index) {
       if((item.stock-item.lockStock)<=0){
         this.$message.warning("库存不足，请选择其他规格");
@@ -236,7 +238,7 @@ export default {
         this.clicked = index;
         this.skuId = item.id;
         this.albumPics = [item.pic];
-        this.skuName=this.product.name+ item.sp1+item.sp2+"<br/>库存："+(item.stock-item.lockStock)+this.product.unit+"--"+item.id;
+        this.skuName=this.product.name+ item.sp1+item.sp2+"<br/>库存："+(item.stock-item.lockStock)+this.product.unit;
         this.skuPrice=item.price;
       }
     },
@@ -254,16 +256,15 @@ export default {
   .wrapper {
     .swiper {
       float: left;
-      width: 642px;
+      width: 500px;
       height: 617px;
       margin-top: 5px;
       img {
-        width: 100%;
-        height: 100%;
+        width: 85%;
       }
     }
     .content {
-      float: right;
+      float: left;
       width: 584px;
       height: auto;
       .item-title {

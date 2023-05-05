@@ -1,26 +1,25 @@
-<template>
+<!-- <template>
   <div class="header">
     <div class="nav-topbar">
       <div class="container">
         <div class="topbar-menu">
-          <a href="javascript:;">线上杂货铺</a> 
+          <a href="javascript:;">图灵商城</a> 
         </div>
         <div class="topbar-user">
           <a href="javascript:;" v-if="username">{{username}}</a>
           <a href="javascript:;" v-if="!username" @click="login">登录</a>
           <a href="javascript:;" v-if="username" @click="logout">退出</a>
-          <!-- <a href="/#/order/list" v-if="username">我的订单</a> -->
-          <!-- <a href="javascript:;" class="my-cart" @click="goToCart"><span class="icon-cart"></span>购物车({{cartCount}})</a> -->
+          <a href="/#/order/list" v-if="username">我的订单</a>
+          <a href="javascript:;" class="my-cart" @click="goToCart"><span class="icon-cart"></span>购物车({{cartCount}})</a>
         </div>
       </div>
     </div>
     <div class="nav-header">
       <div class="container">
         <div class="header-logo">
-          <!-- <a href="/#/index"></a> -->
-          <!-- <a href="/#/index"><img src="/imgs/login-logo.png" alt=""></a> -->
+          <a href="/#/index"></a>
         </div>
-        <div class="header-menu">
+        <!--div class="header-menu">
           <div class="item-menu">
             <span>热销产品</span>
             <div class="children">
@@ -37,9 +36,9 @@
               </ul>
             </div>
           </div>
-          <!-- <div class="item-menu">
+          <div class="item-menu">
             <span>RedMi红米</span>
-          </div> -->
+          </div>
           <div class="item-menu">
             <span>电视</span>
             <div class="children">
@@ -101,7 +100,7 @@
               </ul>
             </div>
           </div>
-        </div>
+        </div-->
         <div class="header-search">
           <div class="wrapper">
             <input type="text"  v-model="keyword" name="keyword">
@@ -217,9 +216,6 @@
         position:relative;
         height:112px;
         @include flex();
-        .header-logo{
-          width:643px;
-        }
         .header-menu{
           display:inline-block;
           width:643px;
@@ -315,11 +311,11 @@
             }
             a{
               @include bgImg(18px,18px,'/imgs/icon-search.png');
-              margin-left:10px;
+              margin-left:17px;
             }
           }
         }
       }
     }
   }
-</style>
+</style> -->
