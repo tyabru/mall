@@ -180,7 +180,7 @@
       </el-table>
     </div>
     <div class="batch-operate-container">
-      <el-select
+      <!-- <el-select
         size="small"
         v-model="operateType" placeholder="批量操作">
         <el-option
@@ -197,7 +197,7 @@
         type="primary"
         size="small">
         确定
-      </el-button>
+      </el-button> -->
     </div>
     <div class="pagination-container">
       <el-pagination
