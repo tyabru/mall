@@ -44,9 +44,10 @@
             <a href="/#/index">继续购物</a>
             共<span>{{list.length}}</span>件商品，已选择<span>{{checkedNum}}</span>件，总价<span>{{calcSum}}</span>
           </div>
-          <div class="total fr">
+          <!-- 订单还没没有写，先删去结算按钮 -->
+          <!-- <div class="total fr">
              <a href="javascript:;" class="btn" @click="order">去结算</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
