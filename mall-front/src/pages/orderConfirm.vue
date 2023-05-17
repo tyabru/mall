@@ -230,15 +230,21 @@
             </select>
           </div>
           <div class="item">
+            <input
+              type="text"
+              class="input"
+              placeholder="请输入详细地址"
+              v-model="checkedItem.detailAddress"
+            />
             <!-- 1. 引入组件支持 -->
-            <el-autocomplete
+            <!-- <el-autocomplete
               class="inline-input"
               v-model="checkedItem.detailAddress"
               :fetch-suggestions="querySearch"
               placeholder="请输入详细地址"
               :trigger-on-focus="false"
               @select="handleSelect"
-            ></el-autocomplete> 
+            ></el-autocomplete>  -->
           </div>
           <div class="item">
             <input
