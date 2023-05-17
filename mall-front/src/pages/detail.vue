@@ -84,12 +84,10 @@
             </div>
             <div class="phone-total" v-if="skuPrice>0">总计：{{ skuPrice }}元</div> 
           </div>
-          <!-- <div class="btn-group">
-            <a href="javascript:;" class="btn btn-large fl" @click="addCart"
-              >加入购物车</a
-            >
-            <a href="javascript:;" class="btn btn-large btn-buy fl">立即购买</a>
-          </div> -->
+          <div class="btn-group">
+            <a href="javascript:;" class="btn btn-large fl" @click="addCart">加入购物车</a>
+            <!-- <a href="javascript:;" class="btn btn-large btn-buy fl">立即购买</a> -->
+          </div>
 
           <!-- <div class="after-sale-info">
             <span
