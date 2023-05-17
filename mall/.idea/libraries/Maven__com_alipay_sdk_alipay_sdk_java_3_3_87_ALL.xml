@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.alipay.sdk:alipay-sdk-java:3.3.87.ALL">
     <CLASSES>
-      <root url="jar://$APPLICATION_HOME_DIR$/MavenRoom/com/alipay/sdk/alipay-sdk-java/3.3.87.ALL/alipay-sdk-java-3.3.87.ALL.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../IntelliJ IDEA 2021.3/MavenRoom/com/alipay/sdk/alipay-sdk-java/3.3.87.ALL/alipay-sdk-java-3.3.87.ALL.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$APPLICATION_HOME_DIR$/MavenRoom/com/alipay/sdk/alipay-sdk-java/3.3.87.ALL/alipay-sdk-java-3.3.87.ALL-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../IntelliJ IDEA 2021.3/MavenRoom/com/alipay/sdk/alipay-sdk-java/3.3.87.ALL/alipay-sdk-java-3.3.87.ALL-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$APPLICATION_HOME_DIR$/MavenRoom/com/alipay/sdk/alipay-sdk-java/3.3.87.ALL/alipay-sdk-java-3.3.87.ALL-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../IntelliJ IDEA 2021.3/MavenRoom/com/alipay/sdk/alipay-sdk-java/3.3.87.ALL/alipay-sdk-java-3.3.87.ALL-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3">
     <CLASSES>
-      <root url="jar://$APPLICATION_HOME_DIR$/MavenRoom/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../IntelliJ IDEA 2021.3/MavenRoom/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$APPLICATION_HOME_DIR$/MavenRoom/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../IntelliJ IDEA 2021.3/MavenRoom/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$APPLICATION_HOME_DIR$/MavenRoom/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../IntelliJ IDEA 2021.3/MavenRoom/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
