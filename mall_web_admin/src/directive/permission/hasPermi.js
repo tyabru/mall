@@ -15,14 +15,14 @@ export default {
       const permissionFlag = value
 
       const hasPermissions = permissions.some(permission => {
-        console.log(permission,permissionFlag);
+        // console.log(permission,permissionFlag);
         if(permissionFlag.includes(permission))
           return true;
         let index = permission.lastIndexOf("/**");
         if (index !== -1){
           return permissionFlag.some(p=>{
             if(permission.includes(p.slice(0,index))){
-              console.log(p.slice(0,index));
+              // console.log(p.slice(0,index));
               return true;
             }
           });

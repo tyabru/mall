@@ -9,14 +9,11 @@ export default {
   inserted(el, binding, vnode) {
     const { value } = binding;
     const roles = store.getters && store.getters.roles
-    console.log("角色为"+roles+"value为"+value);
     if (value && value instanceof Array && value.length > 0) {
       const roleFlag = value
-
       const hasRole = roles.some(role => {
         return roleFlag.includes(role)
       })
-
       if (!hasRole) {
         el.parentNode && el.parentNode.removeChild(el)
       }

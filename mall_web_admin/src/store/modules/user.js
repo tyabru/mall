@@ -51,8 +51,8 @@ const user = {
         getInfo().then(response => {
           const data = response.data
           if (data.roles && data.roles.length > 0) { // 验证返回的roles是否是一个非空数组
-            console.log(data.roles+"角色列表");
-            console.log(data.resources+"资源列表");
+            // console.log(data.roles+"角色列表");
+            // console.log(data.resources+"资源列表");
             commit('SET_ROLES', data.roles)
             commit('SET_RESOURCES',data.resources);
           } else {

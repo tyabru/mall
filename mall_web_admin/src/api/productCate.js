@@ -7,13 +7,7 @@ export function fetchList(parentId,params) {
     params:params
   })
 }
-export  function  fetchListWithChildren(){
-  return request({
-    url:'/productCategory//list/withChildren',
-    method:'get',
-    params:params
-  })
-}
+
 export function deleteProductCate(id) {
   return request({
     url:'/productCategory/delete/'+id,
