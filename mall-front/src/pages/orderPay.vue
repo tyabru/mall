@@ -127,7 +127,7 @@ export default{
           orderId:this.orderId,
           payType:1
         }),{headers: {'Content-Type': 'application/x-www-form-urlencoded'}}).then((res)=>{
-        this.payImageQr='http://127.0.0.1:8098'+res;
+        this.payImageQr='http://localhost:8888'+res;
         window.console.log(res);
         })
       }else{
