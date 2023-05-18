@@ -40,6 +40,7 @@
           <el-button style="width:100%" type="primary" :loading="loading" @click.native.prevent="handleLogin">
             登录
           </el-button>
+          <div><br/></div>
         </el-form-item>
       </el-form>
     </el-card>
@@ -136,7 +137,8 @@
       dialogCancel(){
         this.dialogVisible = false;
         setSupport(false);
-      }
+      },
+      
     }
   }
 </script>

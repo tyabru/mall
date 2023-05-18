@@ -1,7 +1,7 @@
 <template> 
   <div class="app-container">
     <el-card class="filter-container" shadow="never">
-        <div>
+        <!-- <div>
           <i class="el-icon-search"></i>
           <span>筛选搜索</span>
           <el-button
@@ -18,7 +18,7 @@
               <el-input style="width: 203px" v-model="listQuery.keyword" placeholder="品牌名称/关键字"></el-input>
             </el-form-item>
           </el-form>
-        </div>
+        </div> -->
     </el-card>
     <el-card class="operate-container" shadow="never">
       <i class="el-icon-tickets"></i>
@@ -47,7 +47,7 @@
         <el-table-column label="品牌首字母" width="100" align="center">
           <template slot-scope="scope">{{scope.row.firstLetter}}</template>
         </el-table-column>
-        <el-table-column label="排序" width="100" align="center">
+        <!-- <el-table-column label="排序" width="100" align="center">
           <template slot-scope="scope">{{scope.row.sort}}</template>
         </el-table-column>
         <el-table-column label="品牌制造商" width="100" align="center">
@@ -98,11 +98,11 @@
               @click="handleDelete(scope.$index, scope.row)">删除
             </el-button>
           </template>
-        </el-table-column>
+        </el-table-column> -->
       </el-table>
     </div>
     <div class="batch-operate-container">
-      <el-select
+      <!-- <el-select
         size="small"
         v-model="operateType" placeholder="批量操作">
         <el-option
@@ -111,15 +111,15 @@
           :label="item.label"
           :value="item.value">
         </el-option>
-      </el-select>
-      <el-button
+      </el-select> -->
+      <!-- <el-button
         style="margin-left: 20px"
         class="search-button"
         @click="handleBatchOperate()"
         type="primary"
         size="small">
         确定
-      </el-button>
+      </el-button> -->
     </div>
     <div class="pagination-container">
       <el-pagination

@@ -106,7 +106,7 @@
           @click="handleSyncProductSkuStock">同步库存
         </el-button>
       </el-form-item>
-      <!-- <el-form-item label="属性图片：" v-if="hasAttrPic">
+      <el-form-item label="属性图片：" v-if="hasAttrPic">
         <el-card shadow="never" class="cardBg">
           <div v-for="(item,index) in selectProductAttrPics">
             <span>{{item.name}}:</span>
@@ -114,7 +114,7 @@
                            style="width: 300px;display: inline-block;margin-left: 10px"></single-upload>
           </div>
         </el-card>
-      </el-form-item> -->
+      </el-form-item>
       <el-form-item label="商品参数：">
         <el-card shadow="never" class="cardBg">
           <div v-for="(item,index) in selectProductParam" :class="{littleMarginTop:index!==0}">

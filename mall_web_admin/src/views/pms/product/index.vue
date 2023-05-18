@@ -1,18 +1,15 @@
 <template> 
   <div class="app-container">
     <el-card class="filter-container" shadow="never">
-      <div>
+      <!-- <div>
         <i class="el-icon-search"></i>
         <span>筛选搜索</span>
         <el-button
-          v-has-role="['超级管理员']"
-          v-has-permi="['/returnApply/666']"
           style="float: right"
           @click="handleSearchList()"
           type="primary"
           size="small">
           查询结果
-
         </el-button>
         <el-button
           style="float: right;margin-right: 15px"
@@ -20,9 +17,9 @@
           size="small">
           重置
         </el-button>
-      </div>
+      </div> -->
       <div style="margin-top: 15px">
-        <el-form :inline="true" :model="listQuery" size="small" label-width="140px">
+        <!-- <el-form :inline="true" :model="listQuery" size="small" label-width="140px">
           <el-form-item label="输入搜索：">
             <el-input style="width: 203px" v-model="listQuery.keyword" placeholder="商品名称"></el-input>
           </el-form-item>
@@ -66,7 +63,7 @@
               </el-option>
             </el-select>
           </el-form-item>
-        </el-form>
+        </el-form> -->
       </div>
     </el-card>
     <el-card class="operate-container" shadow="never">
@@ -183,7 +180,7 @@
       </el-table>
     </div>
     <div class="batch-operate-container">
-      <el-select
+      <!-- <el-select
         size="small"
         v-model="operateType" placeholder="批量操作">
         <el-option
@@ -200,7 +197,7 @@
         type="primary"
         size="small">
         确定
-      </el-button>
+      </el-button> -->
     </div>
     <div class="pagination-container">
       <el-pagination

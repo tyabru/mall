@@ -1,7 +1,7 @@
 <template> 
   <div class="app-container">
     <el-card class="filter-container" shadow="never">
-      <div>
+      <!-- <div>
         <i class="el-icon-search"></i>
         <span>筛选搜索</span>
         <el-button
@@ -17,7 +17,7 @@
           size="small">
           重置
         </el-button>
-      </div>
+      </div> -->
       <div style="margin-top: 15px">
         <el-form :inline="true" :model="listQuery" size="small" label-width="140px">
           <el-form-item label="品牌名称：">
@@ -125,7 +125,7 @@
       <el-table :data="dialogData.list"
                 @selection-change="handleDialogSelectionChange" border>
         <el-table-column type="selection" width="60" align="center"></el-table-column>
-        <el-table-column label="品牌名称"align="center">
+        <el-table-column label="品牌名称" align="center">
           <template slot-scope="scope">{{scope.row.name}}</template>
         </el-table-column>
         <el-table-column label="相关" width="220" align="center">
