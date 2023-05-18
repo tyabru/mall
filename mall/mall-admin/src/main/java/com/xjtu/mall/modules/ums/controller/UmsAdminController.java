@@ -10,6 +10,7 @@ import com.xjtu.mall.modules.ums.dto.UmsAdminLoginParam;
 import com.xjtu.mall.modules.ums.dto.UmsAdminParam;
 import com.xjtu.mall.modules.ums.dto.UpdateAdminPasswordParam;
 import com.xjtu.mall.modules.ums.model.UmsAdmin;
+import com.xjtu.mall.modules.ums.model.UmsResource;
 import com.xjtu.mall.modules.ums.model.UmsRole;
 import com.xjtu.mall.modules.ums.service.UmsAdminService;
 import com.xjtu.mall.modules.ums.service.UmsRoleService;
@@ -106,10 +107,15 @@ public class UmsAdminController {
         data.put("username", umsAdmin.getUsername());
         data.put("menus", roleService.getMenuList(umsAdmin.getId()));
         data.put("icon", umsAdmin.getIcon());
+        List<UmsResource> resourceList = adminService.getResourceList(umsAdmin.getId());
         List<UmsRole> roleList = adminService.getRoleList(umsAdmin.getId());
         if(CollUtil.isNotEmpty(roleList)){
             List<String> roles = roleList.stream().map(UmsRole::getName).collect(Collectors.toList());
             data.put("roles",roles);
+        }
+        if(CollUtil.isNotEmpty(resourceList)){
+            List<String> resources = resourceList.stream().map(UmsResource::getUrl).collect(Collectors.toList());
+            data.put("resources",resources);
         }
         return CommonResult.success(data);
     }

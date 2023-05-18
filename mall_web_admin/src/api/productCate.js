@@ -1,8 +1,15 @@
 import request from '@/utils/request'
-// request=axios  asiox({ })   $.ajax    
+// request=axios  asiox({ })   $.ajax
 export function fetchList(parentId,params) {
   return request({
     url:'/productCategory/list/'+parentId,
+    method:'get',
+    params:params
+  })
+}
+export  function  fetchListWithChildren(){
+  return request({
+    url:'/productCategory//list/withChildren',
     method:'get',
     params:params
   })
@@ -54,4 +61,3 @@ export function updateNavStatus(data) {
 }
 
 
- 

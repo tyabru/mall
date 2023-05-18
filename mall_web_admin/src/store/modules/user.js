@@ -6,6 +6,7 @@ const user = {
     token: getToken(),
     name: '',
     avatar: '',
+    resources: [],
     roles: []
   },
 
@@ -21,6 +22,9 @@ const user = {
     },
     SET_ROLES: (state, roles) => {
       state.roles = roles
+    },
+    SET_RESOURCES: (state, resources) => {
+      state.resources = resources
     }
   },
 
@@ -31,7 +35,7 @@ const user = {
       return new Promise((resolve, reject) => {
         login(username, userInfo.password).then(response => {
           const data = response.data
-          const tokenStr = data.tokenHead+" "+data.token 
+          const tokenStr = data.tokenHead+" "+data.token
           setToken(tokenStr)
           commit('SET_TOKEN', tokenStr)
           resolve()
@@ -47,7 +51,10 @@ const user = {
         getInfo().then(response => {
           const data = response.data
           if (data.roles && data.roles.length > 0) { // 验证返回的roles是否是一个非空数组
+            console.log(data.roles+"角色列表");
+            console.log(data.resources+"资源列表");
             commit('SET_ROLES', data.roles)
+            commit('SET_RESOURCES',data.resources);
           } else {
             reject('getInfo: roles must be a non-null array !')
           }

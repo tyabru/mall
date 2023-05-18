@@ -5,11 +5,14 @@
         <i class="el-icon-search"></i>
         <span>筛选搜索</span>
         <el-button
+          v-has-role="['超级管理员']"
+          v-has-permi="['/returnApply/666']"
           style="float: right"
           @click="handleSearchList()"
           type="primary"
           size="small">
           查询结果
+
         </el-button>
         <el-button
           style="float: right;margin-right: 15px"
