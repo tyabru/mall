@@ -84,12 +84,12 @@
             </div>
             <div class="phone-total" v-if="skuPrice>0">总计：{{ skuPrice }}元</div> 
           </div>
-          <!-- <div class="btn-group">
+          <div class="btn-group">
             <a href="javascript:;" class="btn btn-large fl" @click="addCart"
               >加入购物车</a
-            >
-            <a href="javascript:;" class="btn btn-large btn-buy fl">立即购买</a>
-          </div> -->
+            <a href="javascript:;" class="btn btn-large fl" @click="addCart">加入购物车</a>
+            <!-- <a href="javascript:;" class="btn btn-large btn-buy fl">立即购买</a> -->
+          </div>
 
           <!-- <div class="after-sale-info">
             <span
@@ -203,24 +203,24 @@ export default {
         this.serviceIds = res.serviceIds.split(",");
       });
     },
-    // addCart() {
-    //   if (this.skuId == null || this.skuId == undefined || this.skuId == "") {
-    //     this.$message.warning("请选择一种规格");
-    //     return;
-    //   }
+    addCart() {
+      if (this.skuId == null || this.skuId == undefined || this.skuId == "") {
+        this.$message.warning("请选择一种规格");
+        return;
+      }
       
-    //   this.axios
-    //     .post("/car/add", {
-    //       productId: this.id,
-    //       productSkuId: this.skuId,
-    //       quantity: 1,
-    //     })
-    //     .then(() => {
-    //       this.$message.success({ 
-    //       dangerouslyUseHTMLString: true,
-    //       message:"添加购物车成功，请点击<a href='/*/cart'>购物车</a>查看"});
-    //     });
-    // },
+      this.axios
+        .post("/car/add", {
+          productId: this.id,
+          productSkuId: this.skuId,
+          quantity: 1,
+        })
+        .then(() => {
+          this.$message.success({ 
+          dangerouslyUseHTMLString: true,
+          message:"添加购物车成功，请点击<a href='/*/cart'>购物车</a>查看"});
+        });
+    },
     handlerSkuid(item, index) {
       if((item.stock-item.lockStock)<=0){
         this.$message.warning("库存不足，请选择其他规格");
