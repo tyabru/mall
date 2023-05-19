@@ -1,7 +1,8 @@
+
 <template> 
   <div class="app-container">
     <el-card class="filter-container" shadow="never">
-      <!-- <div>
+      <div>
         <i class="el-icon-search"></i>
         <span>筛选搜索</span>
         <el-button
@@ -11,21 +12,21 @@
           size="small">
           查询结果
         </el-button>
-        <el-button
+        <!-- <el-button
           style="float: right;margin-right: 15px"
           @click="handleResetSearch()"
           size="small">
           重置
-        </el-button>
-      </div> -->
+        </el-button> -->
+      </div>
       <div style="margin-top: 15px">
-        <!-- <el-form :inline="true" :model="listQuery" size="small" label-width="140px">
+        <el-form :inline="true" :model="listQuery" size="small" label-width="140px">
           <el-form-item label="输入搜索：">
             <el-input style="width: 203px" v-model="listQuery.keyword" placeholder="商品名称"></el-input>
           </el-form-item>
-          <el-form-item label="商品货号：">
+          <!-- <el-form-item label="商品货号：">
             <el-input style="width: 203px" v-model="listQuery.productSn" placeholder="商品货号"></el-input>
-          </el-form-item>
+          </el-form-item> -->
           <el-form-item label="商品分类：">
             <el-cascader
               clearable
@@ -53,7 +54,7 @@
               </el-option>
             </el-select>
           </el-form-item>
-          <el-form-item label="审核状态：">
+          <!-- <el-form-item label="审核状态：">
             <el-select v-model="listQuery.verifyStatus" placeholder="全部" clearable>
               <el-option
                 v-for="item in verifyStatusOptions"
@@ -62,15 +63,14 @@
                 :value="item.value">
               </el-option>
             </el-select>
-          </el-form-item>
-        </el-form> -->
+          </el-form-item> -->
+        </el-form>
       </div>
     </el-card>
     <el-card class="operate-container" shadow="never">
       <i class="el-icon-tickets"></i>
       <span>数据列表</span>
       <el-button
-        v-has-permi="['/brand/*']"
         class="btn-add"
         @click="handleAddProduct()"
         size="mini">
@@ -181,7 +181,7 @@
       </el-table>
     </div>
     <div class="batch-operate-container">
-      <!-- <el-select
+      <el-select
         size="small"
         v-model="operateType" placeholder="批量操作">
         <el-option
@@ -198,7 +198,7 @@
         type="primary"
         size="small">
         确定
-      </el-button> -->
+      </el-button>
     </div>
     <div class="pagination-container">
       <el-pagination
@@ -333,14 +333,14 @@
             label: "取消新品",
             value: "newOff"
           },
-          {
-            label: "转移到分类",
-            value: "transferCategory"
-          },
-          {
-            label: "移入回收站",
-            value: "recycle"
-          }
+          // {
+          //   label: "转移到分类",
+          //   value: "transferCategory"
+          // },
+          // {
+          //   label: "移入回收站",
+          //   value: "recycle"
+          // }
         ],
         operateType: null,
         listQuery: Object.assign({}, defaultListQuery),
@@ -648,5 +648,3 @@
   }
 </script>
 <style></style>
-
-
