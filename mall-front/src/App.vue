@@ -26,13 +26,13 @@ export default {
         let username=this.$cookie.get('username')
         this.$store.dispatch('saveUserName',username); 
     },
-    // // 购物车商品数量
-    // getCartCount(){ 
-    //   this.axios.get('/car/products/sum').then((res=0)=>{ 
-    //     // 存全局变量
-    //     this.$store.dispatch('saveCartCount',res);
-    //   })
-    // }
+    // 购物车商品数量
+    getCartCount(){ 
+      this.axios.get('/car/products/sum').then((res=0)=>{ 
+        // 存全局变量
+        this.$store.dispatch('saveCartCount',res);
+      })
+    }
   }
 }
 </script>

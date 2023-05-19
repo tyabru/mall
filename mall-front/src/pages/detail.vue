@@ -87,7 +87,7 @@
           <div class="btn-group">
             <a href="javascript:;" class="btn btn-large fl" @click="addCart"
               >加入购物车</a
-            >
+            <a href="javascript:;" class="btn btn-large fl" @click="addCart">加入购物车</a>
             <!-- <a href="javascript:;" class="btn btn-large btn-buy fl">立即购买</a> -->
           </div>
 

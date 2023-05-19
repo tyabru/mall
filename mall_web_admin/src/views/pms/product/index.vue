@@ -70,6 +70,7 @@
       <i class="el-icon-tickets"></i>
       <span>数据列表</span>
       <el-button
+        v-has-permi="['/brand/*']"
         class="btn-add"
         @click="handleAddProduct()"
         size="mini">
