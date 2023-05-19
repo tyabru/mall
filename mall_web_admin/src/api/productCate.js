@@ -1,5 +1,5 @@
 import request from '@/utils/request'
-// request=axios  asiox({ })   $.ajax    
+// request=axios  asiox({ })   $.ajax
 export function fetchList(parentId,params) {
   return request({
     url:'/productCategory/list/'+parentId,
@@ -7,6 +7,7 @@ export function fetchList(parentId,params) {
     params:params
   })
 }
+
 export function deleteProductCate(id) {
   return request({
     url:'/productCategory/delete/'+id,
@@ -60,4 +61,3 @@ export function fetchListWithChildren() {
 }
 
 
- 
