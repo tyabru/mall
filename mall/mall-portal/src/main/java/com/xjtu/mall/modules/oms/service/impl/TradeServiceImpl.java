@@ -27,6 +27,7 @@ import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.File;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
@@ -172,6 +173,13 @@ public class TradeServiceImpl implements TradeService {
                 String fileName= String.format("/qr-%s.png",
                         response.getOutTradeNo());
                 String filePath =tradePayProp.getStorePath()+fileName;
+
+                File file = new File(tradePayProp.getStorePath());
+                if(file.mkdirs()) {
+                    System.out.println("文件夹创建成功！");
+                } else {
+                    System.out.println("文件夹创建失败！");
+                }
                 log.info("filePath:" + filePath);
                 ZxingUtils.getQRCodeImge(response.getQrCode(), 256, filePath);
                 //  /static/qrcode/qr-xxxx.png

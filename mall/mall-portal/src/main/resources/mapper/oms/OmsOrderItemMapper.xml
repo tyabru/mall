@@ -31,6 +31,6 @@
     </resultMap>
 
     <select id="selectByOrderId" resultMap="BaseResultMap">
-    select  * from oms_order_item where order_id=#{id}
-     </select>
+        select  * from oms_order_item where order_id=#{id}
+    </select>
 </mapper>

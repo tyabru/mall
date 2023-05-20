@@ -2,12 +2,13 @@ package com.xjtu.mall.common.api;
 
 import cn.hutool.core.convert.Convert;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.github.pagehelper.PageInfo;
 
 import java.util.List;
 
 /**
  * 分页数据封装类
- * Created by macro on 2019/4/19.
+ * Created by xjtu on 2019/4/19.
  */
 public class CommonPage<T> {
     private Integer pageNum;
@@ -31,6 +32,17 @@ public class CommonPage<T> {
         result.setTotalPage(Convert.toInt(pageResult.getTotal()/pageResult.getSize()+1));
         // 当前页数据
         result.setList(pageResult.getRecords());
+        return result;
+    }
+
+    public static <T> CommonPage<T> restPage(List<T> list) {
+        CommonPage<T> result = new CommonPage<T>();
+        PageInfo<T> pageInfo = new PageInfo<T>(list);
+        result.setTotalPage(pageInfo.getPages());
+        result.setPageNum(pageInfo.getPageNum());
+        result.setPageSize(pageInfo.getPageSize());
+        result.setTotal(pageInfo.getTotal());
+        result.setList(pageInfo.getList());
         return result;
     }
 

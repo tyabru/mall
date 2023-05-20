@@ -19,5 +19,5 @@ trade:
   zhifu:
     qrcode:
       httpBasePath: /static/qrcode
-      paySuccessCallBack: http://tulingmall.free.idcfengye.com/order/paySuccess
+      paySuccessCallBack: http://xjtumall.5gzvip.91tunnel.com/order/paySuccess
       storePath: D:/temp/qr-code

@@ -7,7 +7,7 @@ import com.xjtu.mall.modules.ums.model.UmsMember;
 
 /**
  * 后台用户缓存管理Service
- * Created by macro on 2020/3/13.
+ * Created by xjtu on 2020/3/13.
  */
 public interface UmsMemberCacheService {
     /**

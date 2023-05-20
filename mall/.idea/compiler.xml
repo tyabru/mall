@@ -18,6 +18,7 @@
       <module name="mall-admin" target="1.8" />
       <module name="mall-common" target="1.8" />
       <module name="mall-mpbg" target="1.8" />
+      <module name="mall-order" target="1.8" />
       <module name="mall-portal" target="1.8" />
       <module name="mall-security" target="1.8" />
       <module name="tuling-mpbg" target="1.5" />
@@ -28,6 +29,7 @@
       <module name="mall-admin" options="-parameters" />
       <module name="mall-common" options="-parameters" />
       <module name="mall-mpbg" options="-parameters" />
+      <module name="mall-order" options="-parameters" />
       <module name="mall-portal" options="-parameters" />
       <module name="mall-security" options="-parameters" />
       <module name="tuling-mpbg" options="-parameters" />
