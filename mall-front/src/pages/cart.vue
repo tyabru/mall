@@ -41,13 +41,13 @@
         </div>
         <div class="order-wrap clearfix">
           <div class="cart-tip fl">
+            <a href="javascript:;" @click="deleteAllChecked">批量删除</a>
             <a href="/#/index">继续购物</a>
             共<span>{{list.length}}</span>件商品，已选择<span>{{checkedNum}}</span>件，总价<span>{{calcSum}}</span>
           </div>
-          <!-- 订单还没没有写，先删去结算按钮 -->
-          <!-- <div class="total fr">
+          <div class="total fr">
              <a href="javascript:;" class="btn" @click="order">去结算</a>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -154,6 +154,34 @@
          });
         }
       },
+
+      deleteAllChecked() {
+          // var index=0;
+          // this.list.map((oitem)=>{
+          //       if(oitem.productSelected=='1'){
+          //           oitem.productSelected = !oitem.productSelected;
+
+          //           if(oitem.productSelected){
+          //             this.checkedNum++; 
+          //           }else{
+          //             this.checkedNum--;
+          //           }
+          //             this.$set(this.list,index,oitem);
+          //       }
+          //   index++;
+          // });
+          var index=0;
+          this.list.map((oitem)=>{
+                if(oitem.productSelected=='1'){
+
+                    this.delProduct(oitem);
+                    
+                    
+                }
+            index++;
+          });
+      },
+
        // 删除购物车商品
       delProduct(item){
           this.axios.post('/car/delete',Qs.stringify({
