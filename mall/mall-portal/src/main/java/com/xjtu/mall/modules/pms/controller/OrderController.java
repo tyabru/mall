@@ -138,7 +138,7 @@ public class OrderController {
             }
         }
 
-        String alipay_public_key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwUpyecFNQ+yaW2jWzQA71LEcT1xk62vOpNukZFOWCDTKxL2WY6OVv4uh2RajKFdslHfWjvwooXr5TsKtvnv0iRLDjbsuh6H6va5jWa4w2FPOqSGybQzDBSAAx2bAWsjdP/wtHxISyI0JTsxCstjHYippkbvZsa4cDCn3a/7NQuIwrxwlzI3F5AVitENJcRBWDZlbbu1HKp3Af9MDRCj91nNlZrnJZ27CWzPiNhoW5wvo9a1I2+qUQoBvyKYxY0mPeBnSngaYTNXN8RU1MiTwQ6sri2TblSV8EXR+4org82NgjWdWM4L7Bsnz/bA2OTP7jMC1EePnAcsdvUwQPnbQtwIDAQAB";
+        String alipay_public_key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiFPluSxn1oThXLpsPvnmvfaS+iG4nKX0wA0k7nod/PJ9AQNVB1mcQkcgpXi45w4YfSVBzoJzmK9XR5D3B0sgOp2EJYaPZCQEY90AOcW/7B0EqQldjfGIcVxI/GCETW8QTgeFVu3Pt8wBmN6+19ACsOxpaRn6cZPKsOLyTkZoEzEmMhxScbM5uaJF6ErIxd8Pl3KkHCBIEcAzvAE78xEt7rvV7ResUyWpTzuaDH0AXNixfuAaqr1pO3a6EdRSZ0B/k8exmYKIZnq4K1s48beFZvR+QebhIOX4S3a+SMESfZR7FzUDr+oNQW+Xcx1M1P7DdFf38F8oRHkYvUlAvG4B5wIDAQAB";
 
         // 验签  ：去除sign和sign_type 参数 进行验签， checkV1 会在方法中去除，CheckV2不会去除sign_type，所以要手动排除
         boolean signVerified = AlipaySignature.rsaCheckV2(params, alipay_public_key, "utf-8","RSA2"); //调用SDK验证签名

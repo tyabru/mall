@@ -4,228 +4,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0855a341-0206-48ba-b1d0-dbea93b94cba" name="Default Changelist" comment="动态权限管理&#10;--story=1001390 --user=taoyj 动态权限管理 https://www.tapd.cn/49918443/s/1002050">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/controller/OmsOrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/mapper/OmsOrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/mapper/OmsOrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/mapper/OmsOrderOperateHistoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/mapper/OmsOrderOperateHistoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/mapper/OmsOrderReturnApplyDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsCartItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsCartItemExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsCompanyAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsCompanyAddressExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsMoneyInfoParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsOrderDeliveryParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsOrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsOrderExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsOrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsOrderItemExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsOrderOperateHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsOrderOperateHistoryExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsOrderQueryParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsOrderReturnApply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsOrderReturnApplyExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsOrderReturnApplyResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsOrderReturnReason.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsOrderReturnReasonExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsOrderSetting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsOrderSettingExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsReceiverInfoParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsReturnApplyQueryParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/model/OmsUpdateStatusParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/service/OmsCompanyAddressService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/service/OmsOrderReturnApplyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/service/OmsOrderReturnReasonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/service/OmsOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/service/OmsOrderSettingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/oms/service/impl/OmsOrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/controller/SmsHomeAdvertiseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/mapper/SmsHomeAdvertiseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsCoupon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsCouponExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsCouponHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsCouponHistoryExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsCouponProductCategoryRelation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsCouponProductCategoryRelationExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsCouponProductRelation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsCouponProductRelationExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsFlashPromotion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsFlashPromotionExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsFlashPromotionLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsFlashPromotionLogExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsFlashPromotionProductRelation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsFlashPromotionProductRelationExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsFlashPromotionSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsFlashPromotionSessionExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsHomeAdvertise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsHomeAdvertiseExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsHomeBrand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsHomeBrandExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsHomeNewProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsHomeNewProductExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsHomeRecommendProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsHomeRecommendProductExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsHomeRecommendSubject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/model/SmsHomeRecommendSubjectExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/service/SmsHomeAdvertiseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/sms/service/impl/SmsHomeAdvertiseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/mapper/oms/OmsOrderDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/mapper/oms/OmsOrderItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/mapper/oms/OmsOrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/mapper/oms/OmsOrderOperateHistoryDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/mapper/oms/OmsOrderOperateHistoryMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/mapper/sms/SmsHomeAdvertiseMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/exception/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/oms/apply/applyDetail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/oms/apply/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/oms/apply/reason.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/oms/order/components/logisticsDialog.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/oms/order/deliverOrderList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/oms/order/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/oms/order/orderDetail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/oms/order/setting.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/sms/advertise/add.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/sms/advertise/components/HomeAdvertiseDetail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/sms/advertise/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/sms/advertise/update.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/sms/brand/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/sms/coupon/add.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/sms/coupon/components/CouponDetail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/sms/coupon/history.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/sms/coupon/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/sms/coupon/update.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/sms/flash/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/sms/flash/productRelationList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/sms/flash/selectSessionList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/sms/flash/sessionList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/sms/hot/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/sms/new/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mall_web_admin/src/views/sms/subject/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mall-front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../mall-front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mall-front/src/components/NavHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../mall-front/src/components/NavHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mall-front/src/pages/cart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../mall-front/src/pages/cart.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mall-front/src/pages/detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../mall-front/src/pages/detail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mall-front/src/pages/orderPay.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../mall-front/src/pages/orderPay.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="0855a341-0206-48ba-b1d0-dbea93b94cba" name="Default Changelist" comment="广告，订单，支付功能实现">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/config/GlobalCorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/config/GlobalCorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/config/MyBatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/config/MyBatisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/controller/UmsAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/controller/UmsAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/controller/UmsMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/controller/UmsMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/controller/UmsResourceCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/controller/UmsResourceCategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/controller/UmsResourceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/controller/UmsResourceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/controller/UmsRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/controller/UmsRoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/dto/UmsAdminLoginParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/dto/UmsAdminLoginParam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/dto/UmsAdminParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/dto/UmsAdminParam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/dto/UmsMenuNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/dto/UmsMenuNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/dto/UpdateAdminPasswordParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/dto/UpdateAdminPasswordParam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/mapper/UmsAdminLoginLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/mapper/UmsAdminLoginLogMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/mapper/UmsAdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/mapper/UmsAdminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/mapper/UmsAdminRoleRelationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/mapper/UmsAdminRoleRelationMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/mapper/UmsMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/mapper/UmsMenuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/mapper/UmsResourceCategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/mapper/UmsResourceCategoryMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/mapper/UmsResourceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/mapper/UmsResourceMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/mapper/UmsRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/mapper/UmsRoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/mapper/UmsRoleMenuRelationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/mapper/UmsRoleMenuRelationMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/mapper/UmsRoleResourceRelationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/mapper/UmsRoleResourceRelationMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/model/UmsAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/model/UmsAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/model/UmsAdminLoginLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/model/UmsAdminLoginLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/model/UmsAdminRoleRelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/model/UmsAdminRoleRelation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/model/UmsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/model/UmsMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/model/UmsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/model/UmsResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/model/UmsResourceCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/model/UmsResourceCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/model/UmsRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/model/UmsRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/model/UmsRoleMenuRelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/model/UmsRoleMenuRelation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/model/UmsRoleResourceRelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/model/UmsRoleResourceRelation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/RedisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/UmsAdminCacheService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/UmsAdminCacheService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/UmsAdminRoleRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/UmsAdminRoleRelationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/UmsAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/UmsAdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/UmsMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/UmsMenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/UmsResourceCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/UmsResourceCategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/UmsResourceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/UmsResourceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/UmsRoleMenuRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/UmsRoleMenuRelationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/UmsRoleResourceRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/UmsRoleResourceRelationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/UmsRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/UmsRoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/RedisServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/RedisServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsAdminCacheServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsAdminCacheServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsAdminRoleRelationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsAdminRoleRelationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsAdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsAdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsMenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsResourceCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsResourceCategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsResourceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsResourceServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsRoleMenuRelationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsRoleMenuRelationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsRoleResourceRelationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsRoleResourceRelationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsRoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/xjtu/mall/modules/pms/controller/PmsProductCategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/xjtu/mall/modules/pms/controller/PmsProductCategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/xjtu/mall/modules/pms/service/PmsProductCategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/xjtu/mall/modules/pms/service/PmsProductCategoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/xjtu/mall/modules/pms/service/impl/PmsProductCategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/xjtu/mall/modules/pms/service/impl/PmsProductCategoryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/api/CommonPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/api/CommonPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/api/CommonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/api/CommonResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/api/IErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/api/IErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/api/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/api/ResultCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/config/BaseRedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/config/BaseRedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/config/BaseSwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/config/BaseSwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/domain/SwaggerProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/domain/SwaggerProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/exception/ApiException.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/exception/ApiException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/exception/Asserts.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/exception/Asserts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/service/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/service/RedisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/service/impl/RedisServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/xjtu/mall/common/service/impl/RedisServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/target/classes/com/xjtu/mall/common/api/CommonPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/target/classes/com/xjtu/mall/common/api/CommonPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mpbg/src/main/java/com/xjtu/mall/generator/MyBatisPlusGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mpbg/src/main/java/com/xjtu/mall/generator/MyBatisPlusGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/component/trade/alipay/utils/ZxingUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/component/trade/alipay/utils/ZxingUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/config/GlobalCorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/config/GlobalCorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/config/MyBatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/config/MyBatisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/pms/controller/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/pms/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/controller/MemberAddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/pms/controller/MemberAddressController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/pms/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/pms/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/pms/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/oms/service/impl/OmsOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/oms/service/impl/OmsOrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/oms/service/impl/TradeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/oms/service/impl/TradeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/ums/service/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/ums/service/RedisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/ums/service/UmsMemberCacheService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/ums/service/UmsMemberCacheService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/ums/service/impl/RedisServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/ums/service/impl/RedisServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsMemberCacheServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/ums/service/impl/UmsMemberCacheServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/resources/mapper/oms/OmsOrderItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/resources/mapper/oms/OmsOrderItemMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/target/classes/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/target/classes/com/xjtu/mall/component/trade/alipay/utils/ZxingUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/target/classes/com/xjtu/mall/component/trade/alipay/utils/ZxingUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/target/classes/com/xjtu/mall/controller/CarController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/target/classes/com/xjtu/mall/controller/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/target/classes/com/xjtu/mall/controller/MemberAddressController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/target/classes/com/xjtu/mall/controller/OrderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/target/classes/com/xjtu/mall/controller/ProductController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/target/classes/com/xjtu/mall/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/target/classes/com/xjtu/mall/modules/oms/service/impl/TradeServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/target/classes/com/xjtu/mall/modules/oms/service/impl/TradeServiceImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/pms/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/xjtu/mall/modules/pms/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/resources/zfbinfo.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/resources/zfbinfo.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-portal/target/classes/com/xjtu/mall/modules/oms/service/impl/TradeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/target/classes/com/xjtu/mall/modules/oms/service/impl/TradeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/target/classes/mapper/oms/OmsOrderItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/target/classes/mapper/oms/OmsOrderItemMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-security/src/main/java/com/xjtu/mall/security/config/component/dynamicSecurity/DynamicAccessDecisionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-security/src/main/java/com/xjtu/mall/security/config/component/dynamicSecurity/DynamicAccessDecisionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-security/src/main/java/com/xjtu/mall/security/config/component/dynamicSecurity/DynamicSecurityFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-security/src/main/java/com/xjtu/mall/security/config/component/dynamicSecurity/DynamicSecurityFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-security/src/main/java/com/xjtu/mall/security/config/component/dynamicSecurity/DynamicSecurityMetadataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-security/src/main/java/com/xjtu/mall/security/config/component/dynamicSecurity/DynamicSecurityMetadataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-security/src/main/java/com/xjtu/mall/security/config/component/dynamicSecurity/DynamicSecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-security/src/main/java/com/xjtu/mall/security/config/component/dynamicSecurity/DynamicSecurityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/target/classes/zfbinfo.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/target/classes/zfbinfo.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mall_web_admin/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../mall_web_admin/src/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -387,6 +173,9 @@
       </expand>
       <select />
     </treeState>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
@@ -664,7 +453,7 @@
       <recent name="com.tulingxueyuan.mall.modules.oms.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.StartApp">
+  <component name="RunManager" selected="Spring Boot.TulingProtalApplication">
     <configuration name="MyBatisPlusGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xjtu.mall.generator.MyBatisPlusGenerator" />
       <module name="tuling-mpbg" />
@@ -869,7 +658,18 @@
       <workItem from="1682055849738" duration="1150000" />
       <workItem from="1682057939723" duration="4587000" />
       <workItem from="1684495126047" duration="13652000" />
+      <workItem from="1684558045354" duration="779000" />
+      <workItem from="1685535968386" duration="1784000" />
+      <workItem from="1685579413448" duration="5318000" />
     </task>
+    <task id="LOCAL-00001" summary="广告，订单，支付功能实现">
+      <created>1684558202697</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684558202697</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1010,6 +810,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="广告，订单，支付功能实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="广告，订单，支付功能实现" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
