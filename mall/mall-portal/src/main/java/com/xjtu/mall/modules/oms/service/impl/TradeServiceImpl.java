@@ -27,6 +27,7 @@ import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.File;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
@@ -103,8 +104,9 @@ public class TradeServiceImpl implements TradeService {
         // 需保证商户系统端不能重复，建议通过数据库sequence生成，
         String outTradeNo = detail.getId().toString();
 
+
         // (必填) 订单标题，粗略描述用户的支付目的。如“xxx品牌xxx门店当面付扫码消费”
-        String subject = "图灵商城当面付扫码消费";
+        String subject = "线上杂货铺当面付扫码消费";
 
         // (必填) 订单总金额，单位为元，不能超过1亿元
         // 如果同时传入了【打折金额】,【不可打折金额】,【订单总金额】三者,则必须满足如下条件:【订单总金额】=【打折金额】+【不可打折金额】
@@ -129,7 +131,7 @@ public class TradeServiceImpl implements TradeService {
 
         // 业务扩展参数，目前可添加由支付宝分配的系统商编号(通过setSysServiceProviderId方法)，详情请咨询支付宝技术支持
         ExtendParams extendParams = new ExtendParams();
-        extendParams.setSysServiceProviderId("2088100200300400500");
+        extendParams.setSysServiceProviderId("2088721003710090");
 
         // 支付超时，定义为120分钟
         String timeoutExpress = "120m";
@@ -172,6 +174,13 @@ public class TradeServiceImpl implements TradeService {
                 String fileName= String.format("/qr-%s.png",
                         response.getOutTradeNo());
                 String filePath =tradePayProp.getStorePath()+fileName;
+
+                File file = new File(tradePayProp.getStorePath());
+                if(file.mkdirs()) {
+                    System.out.println("文件夹创建成功！");
+                } else {
+                    System.out.println("文件夹创建失败！");
+                }
                 log.info("filePath:" + filePath);
                 ZxingUtils.getQRCodeImge(response.getQrCode(), 256, filePath);
                 //  /static/qrcode/qr-xxxx.png

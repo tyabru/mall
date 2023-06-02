@@ -8,14 +8,14 @@
             <swiper-slide v-for="(item, index) of albumPics" :key="index"
               ><img :src="item" alt="" />
             </swiper-slide>
-            <!-- <swiper-slide><img src="/imgs/detail/phone-2.jpg" alt=""></swiper-slide> 
+            <!-- <swiper-slide><img src="/imgs/detail/phone-2.jpg" alt=""></swiper-slide>
               <swiper-slide><img src="/imgs/detail/phone-3.jpg" alt=""></swiper-slide>
               <swiper-slide><img src="/imgs/detail/phone-4.jpg" alt=""></swiper-slide>   -->
             <!-- Optional controls -->
             <div class="swiper-pagination" slot="pagination"></div>
           </swiper>
-        </div> 
-     
+        </div>
+
 
         <div class="content">
           <h2 class="item-title">{{ product.name }}</h2>
@@ -82,11 +82,11 @@
               </div>
               <div class="fr" v-if="skuName" v-html="skuName"></div>
             </div>
-            <div class="phone-total" v-if="skuPrice>0">总计：{{ skuPrice }}元</div> 
+            <div class="phone-total" v-if="skuPrice>0">总计：{{ skuPrice }}元</div>
           </div>
           <div class="btn-group">
             <a href="javascript:;" class="btn btn-large fl" @click="addCart"
-              >加入购物车</a
+              >加入购物车</a>
             <a href="javascript:;" class="btn btn-large fl" @click="addCart">加入购物车</a>
             <!-- <a href="javascript:;" class="btn btn-large btn-buy fl">立即购买</a> -->
           </div>
@@ -208,7 +208,7 @@ export default {
         this.$message.warning("请选择一种规格");
         return;
       }
-      
+
       this.axios
         .post("/car/add", {
           productId: this.id,
@@ -216,7 +216,7 @@ export default {
           quantity: 1,
         })
         .then(() => {
-          this.$message.success({ 
+          this.$message.success({
           dangerouslyUseHTMLString: true,
           message:"添加购物车成功，请点击<a href='/*/cart'>购物车</a>查看"});
         });
@@ -229,9 +229,9 @@ export default {
       // 重复点击则失效
       if (this.clicked == index) {
         this.clicked = null;
-        this.skuId = 0; 
+        this.skuId = 0;
         this.albumPics = this.product.albumPics.split(",");
-        this.albumPics.unshift(this.product.pic); 
+        this.albumPics.unshift(this.product.pic);
         this.skuName='';
         this.skuPrice=0;
       } else {

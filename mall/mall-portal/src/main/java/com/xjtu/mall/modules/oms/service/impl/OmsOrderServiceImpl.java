@@ -279,7 +279,7 @@ public class OmsOrderServiceImpl extends ServiceImpl<OmsOrderMapper, OmsOrder> i
         omsOrder.setPayType(payType);
         omsOrder.setPaymentTime(new Date());
         omsOrder.setId(orderId);
-
+        log.info("orderId="+orderId+"    payType="+payType);
         UpdateWrapper<OmsOrder> updateWrapper = new UpdateWrapper<>();
         updateWrapper.lambda().set(OmsOrder::getStatus,omsOrder.getStatus())
                 .set(OmsOrder::getPayType,omsOrder.getPayType())

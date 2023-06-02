@@ -45,9 +45,9 @@
             共<span>{{list.length}}</span>件商品，已选择<span>{{checkedNum}}</span>件，总价<span>{{calcSum}}</span>
           </div>
           <!-- 订单还没没有写，先删去结算按钮 -->
-          <!-- <div class="total fr">
+            <div class="total fr">
              <a href="javascript:;" class="btn" @click="order">去结算</a>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -75,7 +75,7 @@
         cartTotalPrice:0,//商品总金额
         checkedNum:0//选中商品数量
       }
-    }, 
+    },
     computed:{
       calcSum(){
         let sum=0;
@@ -121,9 +121,9 @@
             return;
           }
 
-            ++quantity; 
+            ++quantity;
             item.quantity=quantity;
-         
+
           this.axios.post('/car/update/quantity',Qs.stringify({
             id:item.id,
             quantity:item.quantity
@@ -144,7 +144,7 @@
                    oitem.productSelected = !oitem.productSelected;
 
                    if(oitem.productSelected){
-                     this.checkedNum++; 
+                     this.checkedNum++;
                    }else{
                      this.checkedNum--;
                    }
@@ -164,7 +164,7 @@
             var target=0;
             this.list.map((oitem)=>{
                 if(oitem.id==item.id){
-                   target=index;  
+                   target=index;
                 }
                  index++;
             });
@@ -178,7 +178,7 @@
       // 控制全选功能
       toggleAll(){
            this.list.map((item)=>{
-             // 为每个项设置productSelected 
+             // 为每个项设置productSelected
              if(item.quantity>item.stock){
               this.$message.warning('库存不足！');
               return;
@@ -194,20 +194,20 @@
       },
       // 公共赋值
       renderData(res){
-        this.list =  res; 
-        
+        this.list =  res;
+
         this.list.map((item)=>{
           if(item.productSelected==undefined){
               item.productSelected=false;
           }
-        }); 
+        });
 
         //this.list.filter(item=>item.productSelected).length;
       },
       // 购物车下单
       order(){
           let isCheck = this.list.every(item=>!item.productSelected);
-           
+
        if(isCheck){
           this.$message.warning('请选择一件商品');
         }else{

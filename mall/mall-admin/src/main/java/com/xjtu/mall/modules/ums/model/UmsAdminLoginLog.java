@@ -17,7 +17,7 @@ import java.util.Date;
  * 后台用户登录日志表
  * </p>
  *
- * @author macro
+ * @author xjtu
  * @since 2020-08-21
  */
 @Data

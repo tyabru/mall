@@ -39,6 +39,7 @@ public class ZxingUtils {
 
     private static void writeToFile(BitMatrix matrix, String format, File file) throws IOException {
         BufferedImage image = toBufferedImage(matrix);
+        log.info(file+"lalala");
         if (!ImageIO.write(image, format, file)) {
             throw new IOException("Could not write an image of format " + format + " to " + file);
         }
@@ -59,7 +60,7 @@ public class ZxingUtils {
             hints.put(EncodeHintType.CHARACTER_SET, "UTF8");
 
 			BitMatrix bitMatrix = new MultiFormatWriter().encode(contents, BarcodeFormat.QR_CODE, width, height, hints);
-
+            log.info(bitMatrix);
             File imageFile = new File(imgPath);
 			writeToFile(bitMatrix, "png", imageFile);
 

@@ -94,7 +94,7 @@ export default{
       showPayModal:false,//是否显示二次支付确认弹框
       payment:0,//订单总金额
       T:'',//定时器ID
-      payImageQr:'', 
+      payImageQr:'',
       orderSn:'',
       orderOvertime:'',
     }
@@ -116,18 +116,18 @@ export default{
          this.orderSn=res.orderSn;
          this.orderOvertime=res.normalOrderOvertime;
 
-      }) 
+      })
     },
     paySubmit(payType){
       this.payType=payType;
       this.showPay = !this.showPay;
       // 支付宝
-      if(payType == 1){ 
+      if(payType == 1){
           this.axios.post('/order/tradeQrCode',Qs.stringify({
           orderId:this.orderId,
           payType:1
         }),{headers: {'Content-Type': 'application/x-www-form-urlencoded'}}).then((res)=>{
-        this.payImageQr='http://127.0.0.1:8098'+res;
+        this.payImageQr='http://127.0.0.1:8888'+res;
         window.console.log(res);
         })
       }else{
