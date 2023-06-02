@@ -23,7 +23,7 @@
           <el-form-item label="广告名称：">
             <el-input v-model="listQuery.name" class="input-width" placeholder="广告名称"></el-input>
           </el-form-item>
-          <el-form-item label="广告位置：">
+          <!-- <el-form-item label="广告位置：">
             <el-select v-model="listQuery.type" placeholder="全部" clearable class="input-width">
               <el-option v-for="item in typeOptions"
                          :key="item.value"
@@ -31,7 +31,7 @@
                          :value="item.value">
               </el-option>
             </el-select>
-          </el-form-item>
+          </el-form-item> -->
           <el-form-item label="到期时间：">
             <el-date-picker
               class="input-width"
@@ -84,12 +84,12 @@
             </el-switch>
           </template>
         </el-table-column>
-        <el-table-column label="点击次数" width="120" align="center">
+        <!-- <el-table-column label="点击次数" width="120" align="center">
           <template slot-scope="scope">{{scope.row.clickCount}}</template>
         </el-table-column>
         <el-table-column label="生成订单" width="120" align="center">
           <template slot-scope="scope">{{scope.row.orderCount}}</template>
-        </el-table-column>
+        </el-table-column> -->
         <el-table-column label="操作" width="120" align="center">
           <template slot-scope="scope">
             <el-button size="mini"
